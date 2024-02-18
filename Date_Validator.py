@@ -11,4 +11,9 @@ with open(date_file, 'r') as file:
     dates = [line.strip() for line in file.readlines()]
 
 for item in os.listdir(folder_path):
-    print(item)
+    date = item
+    if date in dates:
+        dates.remove(date)
+        print(f"Value {date} removed from the list.")
+    else:
+        print(f"Value {date} not found in the list.")
