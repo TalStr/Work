@@ -15,9 +15,12 @@ for item in os.listdir(folder_path):
     item = item.split('.')
     if item[0] == "Dates" or item[0] == "Missing_Dates" or item[-1] != "txt":
         continue
-    date = ''.join(item[0].split('_')[0:3])
-    if date in dates:
-        dates.remove(date)
+    date1 = ''.join(item[0].split('_')[0:3])
+    date2 = item[0].split('_')[0]
+    if date1 in dates:
+        dates.remove(date1)
+    elif date2 in dates:
+        dates.remove(date2)
 
 print("Missing Dates:")
 print(dates)
