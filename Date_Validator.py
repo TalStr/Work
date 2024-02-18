@@ -3,9 +3,9 @@ import sys
 
 if len(sys.argv) != 2:
     print("Usage: python script_name.py <path_to_folder>")
-    sys.exit(1)
-
-folder_path = sys.argv[1]
+    folder_path = input("Enter path to folder:\n")
+else:
+    folder_path = sys.argv[1]
 
 # Open the file and read the lines into a list
 with open(rf"{folder_path}\Dates.txt", 'r') as file:
