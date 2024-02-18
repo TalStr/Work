@@ -1,7 +1,7 @@
 import os
 
 #Path to Folder
-folder_path = r"C:\Users\tal\Documents\Work\HNGT1-60026"
+folder_path = input("Enter path to folder:\n")
 
 # Open the file and read the lines into a list
 with open(rf"{folder_path}\Dates.txt", 'r') as file:
@@ -20,3 +20,4 @@ print(dates)
 with open(fr"{folder_path}\Missing_Dates.txt", 'w') as file:
     for date in dates:
         file.write(date + '\n')
+print(f"Missing_Dates files created in {folder_path}")
