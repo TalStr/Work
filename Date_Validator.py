@@ -17,11 +17,16 @@ for item in os.listdir(folder_path):
         continue
     date1 = ''.join(item[0].split('_')[0:3])
     date2 = item[0].split('_')[0]
+    date3 = ''.join(item[0].split('_')[-3:])
+    date4 = item[0].split('_')[-1]
     if date1 in dates:
         dates.remove(date1)
     elif date2 in dates:
         dates.remove(date2)
-
+    elif date3 in dates:
+        dates.remove(date3)
+    elif date4 in dates:
+        dates.remove(date4)
 print("Missing Dates:")
 print(dates)
 with open(fr"{folder_path}\Missing_Dates.txt", 'w') as file:
