@@ -1,7 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module type="PYTHON_MODULE" version="4">
   <component name="NewModuleRootManager">
-    <content url="file://$MODULE_DIR$" />
+    <content url="file://$MODULE_DIR$">
+      <excludeFolder url="file://$MODULE_DIR$/download" />
+      <excludeFolder url="file://$MODULE_DIR$/profile/AutofillStates" />
+      <excludeFolder url="file://$MODULE_DIR$/profile/CertificateRevocation" />
+      <excludeFolder url="file://$MODULE_DIR$/profile/Crashpad" />
+      <excludeFolder url="file://$MODULE_DIR$/profile/Crowd Deny" />
+      <excludeFolder url="file://$MODULE_DIR$/profile/Default/Code Cache/js/index-dir" />
+      <excludeFolder url="file://$MODULE_DIR$/profile/Default/Code Cache/wasm" />
+      <excludeFolder url="file://$MODULE_DIR$/profile/Default/DawnGraphiteCache" />
+      <excludeFolder url="file://$MODULE_DIR$/profile/Default/DawnWebGPUCache" />
+      <excludeFolder url="file://$MODULE_DIR$/profile/Default/Download Service/Files" />
+      <excludeFolder url="file://$MODULE_DIR$/profile/Default/Extension Rules" />
+      <excludeFolder url="file://$MODULE_DIR$/profile/Default/Extension Scripts" />
+      <excludeFolder url="file://$MODULE_DIR$/profile/Default/Extension State" />
+      <excludeFolder url="file://$MODULE_DIR$/profile/Default/GPUCache" />
+      <excludeFolder url="file://$MODULE_DIR$/profile/Default/PersistentOriginTrials" />
+      <excludeFolder url="file://$MODULE_DIR$/profile/Default/Safe Browsing Network" />
+      <excludeFolder url="file://$MODULE_DIR$/profile/Default/Segmentation Platform" />
+      <excludeFolder url="file://$MODULE_DIR$/profile/Default/Shared Dictionary" />
+      <excludeFolder url="file://$MODULE_DIR$/profile/Default/Site Characteristics Database" />
+      <excludeFolder url="file://$MODULE_DIR$/profile/Default/Sync Data" />
+      <excludeFolder url="file://$MODULE_DIR$/profile/Default/WebStorage" />
+      <excludeFolder url="file://$MODULE_DIR$/profile/Default/blob_storage" />
+      <excludeFolder url="file://$MODULE_DIR$/profile/Default/chrome_cart_db" />
+      <excludeFolder url="file://$MODULE_DIR$/profile/Default/commerce_subscription_db" />
+      <excludeFolder url="file://$MODULE_DIR$/profile/Default/coupon_db" />
+      <excludeFolder url="file://$MODULE_DIR$/profile/Default/databases" />
+      <excludeFolder url="file://$MODULE_DIR$/profile/Default/discounts_db" />
+      <excludeFolder url="file://$MODULE_DIR$/profile/Default/parcel_tracking_db" />
+      <excludeFolder url="file://$MODULE_DIR$/profile/Default/shared_proto_db" />
+      <excludeFolder url="file://$MODULE_DIR$/profile/FileTypePolicies" />
+      <excludeFolder url="file://$MODULE_DIR$/profile/FirstPartySetsPreloaded" />
+      <excludeFolder url="file://$MODULE_DIR$/profile/GraphiteDawnCache" />
+      <excludeFolder url="file://$MODULE_DIR$/profile/MEIPreload" />
+      <excludeFolder url="file://$MODULE_DIR$/profile/MediaFoundationWidevineCdm" />
+      <excludeFolder url="file://$MODULE_DIR$/profile/OnDeviceHeadSuggestModel" />
+      <excludeFolder url="file://$MODULE_DIR$/profile/OptimizationHints" />
+      <excludeFolder url="file://$MODULE_DIR$/profile/OriginTrials" />
+      <excludeFolder url="file://$MODULE_DIR$/profile/PKIMetadata" />
+      <excludeFolder url="file://$MODULE_DIR$/profile/PrivacySandboxAttestationsPreloaded" />
+      <excludeFolder url="file://$MODULE_DIR$/profile/RecoveryImproved" />
+      <excludeFolder url="file://$MODULE_DIR$/profile/SSLErrorAssistant" />
+      <excludeFolder url="file://$MODULE_DIR$/profile/SafetyTips" />
+      <excludeFolder url="file://$MODULE_DIR$/profile/ShaderCache" />
+      <excludeFolder url="file://$MODULE_DIR$/profile/Subresource Filter" />
+      <excludeFolder url="file://$MODULE_DIR$/profile/ThirdPartyModuleList64" />
+      <excludeFolder url="file://$MODULE_DIR$/profile/TpcdMetadata" />
+      <excludeFolder url="file://$MODULE_DIR$/profile/TrustTokenKeyCommitments" />
+      <excludeFolder url="file://$MODULE_DIR$/profile/WidevineCdm" />
+      <excludeFolder url="file://$MODULE_DIR$/profile/ZxcvbnData" />
+      <excludeFolder url="file://$MODULE_DIR$/profile/hyphen-data" />
+      <excludeFolder url="file://$MODULE_DIR$/profile/segmentation_platform" />
+    </content>
     <orderEntry type="jdk" jdkName="WorkEnv" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
