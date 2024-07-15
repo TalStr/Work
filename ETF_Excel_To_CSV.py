@@ -136,7 +136,7 @@ if __name__ == "__main__":
     download_dir = 'ETF_ExcelToCSV.TempDownloads'
     result_dir = 'ETF_ExcelToCSV.Results'
     # Create the download directory, failing if it already exists.
-    os.makedirs(download_dir, exist_ok=False)
+    os.makedirs(download_dir, exist_ok=True)
     # Get the current date for naming purposes.
     run_date = datetime.datetime.now().strftime("%Y-%m-%d")
     # Initialize a list to hold DataFrames for each ETF.
