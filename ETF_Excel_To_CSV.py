@@ -128,6 +128,7 @@ def generate_dataframe(file_path: str, file_metadata: dict) -> pd.DataFrame:
     # Insert metadata columns at the beginning of the DataFrame.
     df.insert(0, "Ticker Symbol", file_metadata['Ticker'])
     df.insert(0, "Date", file_metadata['Date'])
+    df['Weight'] = df['Weight'] / 100
     return df
 
 
@@ -139,6 +140,7 @@ if __name__ == "__main__":
     os.makedirs(download_dir, exist_ok=True)
     # Get the current date for naming purposes.
     run_date = datetime.datetime.now().strftime("%Y-%m-%d")
+    run_time = datetime.datetime.now().strftime("%H%M%S")
     # Initialize a list to hold DataFrames for each ETF.
     dataframe_list = []
     # Iterate over the ETFs, download, and process each file.
@@ -159,4 +161,4 @@ if __name__ == "__main__":
     if not os.path.exists(result_dir):
         os.makedirs(result_dir)
     # Save the concatenated DataFrame to a CSV file.
-    result_df.to_csv(os.path.join(result_dir, f'ETF Holdings {run_date}.csv'), index=False)
+    result_df.to_csv(os.path.join(result_dir, f'ETF Holdings {run_date}_{run_time}.csv'), index=False)
