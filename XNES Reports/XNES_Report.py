@@ -97,5 +97,5 @@ if __name__ == "__main__":
         ws[f'I{i+23}'] = row['dsc']
         ws[f'J{i+23}'] = row['date']
     # Save the workbook
-    wb.save(f"XNES_Report_{QUERY_DATE.strftime("%Y%m%d")}.xlsx")
+    wb.save(f"XNES-COMM-WEEKLY_{QUERY_DATE.strftime("%Y%m%d")}.xlsx")
     print("Report generated successfully.")
