@@ -98,13 +98,4 @@ if __name__ == "__main__":
         ws[f'J{i+23}'] = row['date']
     # Save the workbook
     wb.save(f"XNES_Report_{QUERY_DATE.strftime("%Y%m%d")}.xlsx")
-
-    # for each dataframe print it and save it to csv
-    print(exposures_df)
-    # exposures_df.to_csv("exposures.csv", index=False)
-    print(var_df)
-    # var_df.to_csv("var.csv", index=False)
-    print(margin_df)
-    # margin_df.to_csv("margin.csv", index=False)
-    # print(pos_changes_df)
-    # pos_changes_df.to_csv("pos_changes.csv", index=False)
+    print("Report generated successfully.")
