@@ -4,3 +4,6 @@ profile/
 /profile/
 ETF_ExcelToCSV.Results/
 XNES Reports/.env
+Gen Forcasts/bars/*
+griffin_stats/data/*
+/*.zip
