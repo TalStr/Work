@@ -21,6 +21,9 @@ for file in glob.glob("*.{}".format("csv")):
     engine = file.split(".")[0]
     if engine == "stats" or engine == "volumes":
         continue
+    # current_positions_mkt: Dict[str, Dict[str, Tuple[int, datetime]]] = defaultdict(
+    #     lambda: defaultdict(lambda: (0, datetime.now()))
+    # )
     current_positions_mkt: Dict[str, Tuple[int, datetime]] = defaultdict(
         lambda: (0, datetime.now())
     )
@@ -35,9 +38,11 @@ for file in glob.glob("*.{}".format("csv")):
     )
     df["Date"] = pd.to_datetime(a[0], format="%Y-%m-%d")
     df["UTCTime"] = pd.to_datetime(df["UTCTime"], format="%Y-%m-%d %H:%M:%S.%f")
+    df.sort_values(by="UTCTime", inplace=True)
     # df = df.loc[(df["Date"] >= "2022-01-01") & (df["Date"] <= "2025-01-01")]
     for index, row in df.iterrows():
         mkt = row["Instrument"].split(".")[-1][:-1]
+        # sub_strat =
         vol[mkt] += abs(row["Amount"])
         current_position = current_positions_mkt[mkt]
         if current_position[0] == 0 and row["Amount"] != 0:
